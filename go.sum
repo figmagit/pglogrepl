@@ -1,3 +1,9 @@
+github.com/Slava/pgconn v1.1.0-reader h1:ZEs8/EkJfsOSQhFEvxPuU0luDmIOd4UmcYSvNPYVRJw=
+github.com/Slava/pgconn v1.1.0-reader/go.mod h1:vrGklmYnslZDzmtCTwz3ZR2jOu7dFq+A04P4kgt9iR0=
+github.com/Slava/pgproto3/v2 v2.0.0-copydata2 h1:HLmzcmkPz95TBZLVs+W1jS0eYsEsjlkAR97chNRpTNw=
+github.com/Slava/pgproto3/v2 v2.0.0-copydata2/go.mod h1:c3KGsoOAuiveDktC4ZUT8ahU0/JGiAlqNXkGk/zQiBE=
+github.com/Slava/pgproto3/v2 v2.0.0-copydata3 h1:wo/nNJ1BBLy3zhBaM5f9vsD7DzDnduxuUrZsWvy4osU=
+github.com/Slava/pgproto3/v2 v2.0.0-copydata3/go.mod h1:c3KGsoOAuiveDktC4ZUT8ahU0/JGiAlqNXkGk/zQiBE=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
 github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
 github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
@@ -6,6 +12,10 @@ github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/figma/pgconn v1.1.0-figma1 h1:yAJ5yHem0PWY9p36w0QdxIa6Loh8SFRq241G/7bvaes=
+github.com/figma/pgconn v1.1.0-figma1/go.mod h1:vN72jhelcXSpiM0IeALBKrtx9gRm15KNDiGq4z7tFqY=
+github.com/figma/pgproto3/v2 v2.0.0-figma1 h1:82jJwSuK5LbXPjJs64Qc9iK6srCZnGsc3UihoR4h0G4=
+github.com/figma/pgproto3/v2 v2.0.0-figma1/go.mod h1:NCH+RBehIi7M1TGYrxOdyrLoz+Ktp1zGPuQ6QVdGPiM=
 github.com/go-stack/stack v1.8.0/go.mod h1:v0f6uXyyMGvRgIKkXu+yp6POWl0qKG85gN/melR3HDY=
 github.com/jackc/chunkreader v1.0.0 h1:4s39bBR8ByfqH+DKm8rQA3E1LHZWB9XWcrz8fqaZbe0=
 github.com/jackc/chunkreader v1.0.0/go.mod h1:RT6O25fNZIuasFJRyZ4R/Y2BbhasbmZXF9QQ7T3kePo=
@@ -15,11 +25,15 @@ github.com/jackc/pgconn v0.0.0-20190420214824-7e0022ef6ba3/go.mod h1:jkELnwuX+w9
 github.com/jackc/pgconn v0.0.0-20190823011127-1558987979c5 h1:RfZIrdnrVycczb9xr6Q0zsHRUNeuu2wYua+dsfpMW7A=
 github.com/jackc/pgconn v0.0.0-20190823011127-1558987979c5/go.mod h1:lLjNuW/+OfW9/pnVKPazfWOgNfH2aPem8YQ7ilXGvJE=
 github.com/jackc/pgconn v0.0.0-20190824142844-760dd75542eb/go.mod h1:lLjNuW/+OfW9/pnVKPazfWOgNfH2aPem8YQ7ilXGvJE=
+github.com/jackc/pgconn v0.0.0-20190831204454-2fabfa3c18b7 h1:TkoyBlkclDwzFAG2KupYCI95DH0lJnLJBTT6Rw/N/l4=
 github.com/jackc/pgconn v0.0.0-20190831204454-2fabfa3c18b7/go.mod h1:ZJKsE/KZfsUgOEh9hBm+xYTstcNHg7UPMVJqRfQxq4s=
 github.com/jackc/pgconn v1.1.0 h1:10i6DMVJOSko/sD3FLpFKBHONzDGKkX8pbLyHC8B92o=
 github.com/jackc/pgconn v1.1.0/go.mod h1:GgY/Lbj1VonNaVdNUHs9AwWom3yP2eymFQ1C8z9r/Lk=
 github.com/jackc/pgio v1.0.0 h1:g12B9UwVnzGhueNavwioyEEpAmqMe1E/BN9ES+8ovkE=
 github.com/jackc/pgio v1.0.0/go.mod h1:oP+2QK2wFfUWgr+gxjoBH9KGBb31Eio69xUb0w5bYf8=
+github.com/jackc/pglogrepl v0.0.0-20191119150345-1df4b3e965c3 h1:BhR/d8dsfWhIGQboMF0aVSNcZRfp/H+wsnbdiLwgLDE=
+github.com/jackc/pglogrepl v0.0.0-20191119150345-1df4b3e965c3/go.mod h1:3Nwqi/QTsjaYxFh6Enw980AgQ16IypmAnsXyDoWHtY4=
+github.com/jackc/pgmock v0.0.0-20190831213851-13a1b77aafa2 h1:JVX6jT/XfzNqIjye4717ITLaNwV9mWbJx0dLCpcRzdA=
 github.com/jackc/pgmock v0.0.0-20190831213851-13a1b77aafa2/go.mod h1:fGZlG77KXmcq05nJLRkk0+p82V8B8Dw8KN2/V9c/OAE=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
 github.com/jackc/pgpassfile v1.0.0/go.mod h1:CEx0iS5ambNFdcRtxPj5JhEz+xB6uRky5eyVu/W2HEg=
@@ -29,6 +43,7 @@ github.com/jackc/pgproto3/v2 v2.0.0-alpha1.0.20190420180111-c116219b62db/go.mod 
 github.com/jackc/pgproto3/v2 v2.0.0-alpha1.0.20190609003834-432c2951c711 h1:vZp4bYotXUkFx7JUSm7U8KV/7Q0AOdrQxxBBj0ZmZsg=
 github.com/jackc/pgproto3/v2 v2.0.0-alpha1.0.20190609003834-432c2951c711/go.mod h1:uH0AWtUmuShn0bcesswc4aBTWGvw0cAxIJp+6OB//Wg=
 github.com/jackc/pgproto3/v2 v2.0.0-rc3/go.mod h1:ryONWYqW6dqSg1Lw6vXNMXoBJhpzvWKnT95C46ckYeM=
+github.com/jackc/pgproto3/v2 v2.0.0-rc3.0.20190831210041-4c03ce451f29 h1:f2HwOeI1NIJyNFVVeh1gUISyt57iw/fmI/IXJfH3ATE=
 github.com/jackc/pgproto3/v2 v2.0.0-rc3.0.20190831210041-4c03ce451f29/go.mod h1:ryONWYqW6dqSg1Lw6vXNMXoBJhpzvWKnT95C46ckYeM=
 github.com/jackc/pgproto3/v2 v2.0.0 h1:FApgMJ/GtaXfI0s8Lvd0kaLaRwMOhs4VH92pwkwQQvU=
 github.com/jackc/pgproto3/v2 v2.0.0/go.mod h1:ryONWYqW6dqSg1Lw6vXNMXoBJhpzvWKnT95C46ckYeM=
