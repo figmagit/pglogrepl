@@ -124,13 +124,8 @@ func CreateReplicationSlot(
 	conn *pgconn.PgConn,
 	slotName string,
 	outputPlugin string,
-	options CreateReplicationSlotOptions,
 ) (CreateReplicationSlotResult, error) {
-	var temporaryString string
-	if options.Temporary {
-		temporaryString = "TEMPORARY"
-	}
-	sql := fmt.Sprintf("CREATE_REPLICATION_SLOT %s %s LOGICAL %s %s", slotName, temporaryString, outputPlugin, options.SnapshotAction)
+	sql := fmt.Sprintf("SELECT * FROM pg_create_logical_replication_slot('%s', '%s')", slotName, outputPlugin)
 	return ParseCreateReplicationSlot(conn.Exec(ctx, sql))
 }
 
@@ -152,14 +147,12 @@ func ParseCreateReplicationSlot(mrr *pgconn.MultiResultReader) (CreateReplicatio
 	}
 
 	row := result.Rows[0]
-	if len(row) != 4 {
-		return crsr, errors.Errorf("expected 4 result columns, got %d", len(row))
+	if len(row) != 2 {
+		return crsr, errors.Errorf("expected 2 result columns, got %d", len(row))
 	}
 
 	crsr.SlotName = string(row[0])
 	crsr.ConsistentPoint = string(row[1])
-	crsr.SnapshotName = string(row[2])
-	crsr.OutputPlugin = string(row[3])
 
 	return crsr, nil
 }
