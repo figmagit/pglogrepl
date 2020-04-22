@@ -130,7 +130,7 @@ func CreateReplicationSlot(
 	if options.Temporary {
 		temporaryString = "TEMPORARY"
 	}
-	sql := fmt.Sprintf("CREATE_REPLICATION_SLOT %s %s LOGICAL %s %s", slotName, temporaryString, outputPlugin, options.SnapshotAction)
+	sql := fmt.Sprintf("CREATE_REPLICATION_SLOT \"%s\" %s LOGICAL %s %s", slotName, temporaryString, outputPlugin, options.SnapshotAction)
 	return ParseCreateReplicationSlot(conn.Exec(ctx, sql))
 }
 
@@ -174,7 +174,7 @@ func DropReplicationSlot(ctx context.Context, conn *pgconn.PgConn, slotName stri
 	if options.Wait {
 		waitString = "WAIT"
 	}
-	sql := fmt.Sprintf("DROP_REPLICATION_SLOT %s %s", slotName, waitString)
+	sql := fmt.Sprintf("DROP_REPLICATION_SLOT \"%s\" %s", slotName, waitString)
 	_, err := conn.Exec(ctx, sql).ReadAll()
 	return err
 }
@@ -194,7 +194,7 @@ func StartReplication(ctx context.Context, conn *pgconn.PgConn, slotName string,
 	if len(options.PluginArguments) > 0 {
 		pluginArgumentsString = fmt.Sprintf("( %s )", strings.Join(options.PluginArguments, ", "))
 	}
-	sql := fmt.Sprintf("START_REPLICATION SLOT %s LOGICAL %s %s %s", slotName, startLSN, timelineString, pluginArgumentsString)
+	sql := fmt.Sprintf("START_REPLICATION SLOT \"%s\" LOGICAL %s %s %s", slotName, startLSN, timelineString, pluginArgumentsString)
 
 	buf := (&pgproto3.Query{String: sql}).Encode(nil)
 	err := conn.SendBytes(ctx, buf)
